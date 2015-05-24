@@ -47,7 +47,7 @@ cacheSolve <- function(x, ...) {
   ## ok, if we are here, then no inv is cached, let us compute
   
   data <- x$get()
-  inv <- solve(data)
+  inv <- ginv(data, ...)
   x$setinv(inv)
   inv
 }
