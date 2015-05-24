@@ -1,13 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+## To cache inverse of a matrix
 
-## Write a short comment describing this function
+
+## This function creates a spectial vector with list of functions to cache inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   
   inv  <-  NULL
   
-  # set x to the input matrix, rest inv
+  # set x to the input matrix, reset inv
   set <- function(y) {
     x <<- y
     inv <<- NULL
@@ -29,7 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Returns the current cached value or computes the inv
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
